@@ -1,0 +1,268 @@
+{
+  "structural_failures": 0,
+  "checks": [
+    {
+      "group": "schema",
+      "name": "csv headers match data dictionary",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "schema",
+      "name": "all values parse to declared type",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "schema",
+      "name": "required fields populated",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "schema",
+      "name": "values within allowed enums",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "schema",
+      "name": "numeric values within declared ranges",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "schema",
+      "name": "id/code patterns",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "structure",
+      "name": "primary keys unique",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "structure",
+      "name": "unique constraints hold",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "structure",
+      "name": "foreign keys resolve (all joins valid)",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "structure",
+      "name": "ID conventions deterministic, immutable-style and consistent",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "leakage",
+      "name": "no ground-truth columns in input tables",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "fairness",
+      "name": "protected attributes absent from every decision's rule_inputs",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "fairness",
+      "name": "rules.py never references protected attributes",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "structure",
+      "name": "SQL seed loads into SQLite (CHECK/PK/UNIQUE/FK enforced) and matches CSV counts",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "business",
+      "name": "master-data date ordering and effective-date sanity",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "business",
+      "name": "checks and documents never precede submission",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "business",
+      "name": "[finding] decision never precedes the check it cites",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "group": "business",
+      "name": "[finding] term/principal within product range for every application",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "group": "business",
+      "name": "[finding] schedules reconcile to principal/interest (every loan)",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "group": "business",
+      "name": "every approved loan has a schedule",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "lifecycle",
+      "name": "event chains follow legal transitions and match LoanApplication.status",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "lifecycle",
+      "name": "[finding] event timestamps non-decreasing",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "APP-2026-000053 event 3 earlier than 2",
+        "APP-2026-000071 event 3 earlier than 2",
+        "APP-2026-000178 event 3 earlier than 2",
+        "APP-2026-000322 event 3 earlier than 2",
+        "APP-2026-000537 event 3 earlier than 2",
+        "APP-2026-000967 event 3 earlier than 2",
+        "APP-2026-001063 event 3 earlier than 2",
+        "APP-2026-001154 event 3 earlier than 2"
+      ]
+    },
+    {
+      "group": "lifecycle",
+      "name": "approval and disbursement obey prerequisites",
+      "passed": true,
+      "violations": 0,
+      "samples": []
+    },
+    {
+      "group": "business",
+      "name": "[finding] no duplicate application disbursed twice",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "group": "info",
+      "name": "duplicate submissions caught by rule R01",
+      "passed": true,
+      "violations": 0,
+      "samples": [
+        "91 applications rejected as duplicates"
+      ]
+    },
+    {
+      "group": "business",
+      "name": "[finding] affordability checks reproducible from source records",
+      "passed": false,
+      "violations": 40,
+      "samples": [
+        "AFC-APP-2026-000072-01: monthly_income_used: stored 100890.75 vs recomputed 63562.92",
+        "AFC-APP-2026-000600-01: monthly_income_used: stored 98420.16 vs recomputed 63362.28",
+        "AFC-APP-2026-000706-01: monthly_income_used: stored 86703.41 vs recomputed 56790.93",
+        "AFC-APP-2026-000795-01: monthly_income_used: stored 56893.2 vs recomputed 36439.36",
+        "AFC-APP-2026-000799-01: monthly_income_used: stored 39586.66 vs recomputed 23463.77",
+        "AFC-APP-2026-000974-01: monthly_income_used: stored 89873.08 vs recomputed 62981.88",
+        "AFC-APP-2026-001297-01: monthly_income_used: stored 262107.41 vs recomputed 151682.59",
+        "AFC-APP-2026-001358-01: monthly_income_used: stored 47278.5 vs recomputed 30531.06"
+      ]
+    },
+    {
+      "group": "business",
+      "name": "[finding] decisions reproducible by rules and cite exact inputs",
+      "passed": false,
+      "violations": 120,
+      "samples": [
+        "DEC-APP-2026-000003-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R00_PRODUCT_LIMITS",
+        "DEC-APP-2026-000042-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R00_PRODUCT_LIMITS",
+        "DEC-APP-2026-000072-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed MANUAL_REVIEW/R04_MANUAL_REVIEW",
+        "DEC-APP-2026-000109-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R01_DUPLICATE",
+        "DEC-APP-2026-000201-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R00_PRODUCT_LIMITS",
+        "DEC-APP-2026-000255-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R01_DUPLICATE",
+        "DEC-APP-2026-000378-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R01_DUPLICATE",
+        "DEC-APP-2026-000392-01: stored APPROVED/R05_AUTO_APPROVE vs recomputed REJECTED/R00_PRODUCT_LIMITS"
+      ]
+    }
+  ],
+  "findings_by_type": {
+    "DECISION_BEFORE_REQUIRED_CHECKS": 40,
+    "DECISION_RECOMPUTE_MISMATCH": 120,
+    "DUPLICATE_APPLICATION_DISBURSED_TWICE": 40,
+    "EVENT_TIMESTAMP_ORDER": 40,
+    "INCOME_CONFLICT_ACROSS_SOURCES": 40,
+    "SCHEDULE_TOTALS_NOT_RECONCILED": 40,
+    "TERM_OUTSIDE_PRODUCT_RANGE": 40
+  }
+}

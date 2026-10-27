@@ -1,0 +1,5 @@
+product_id,product_name,min_principal,max_principal,min_term_months,max_term_months,annual_rate_pct,max_dti_pct,min_credit_score,min_disposable_income,effective_from,effective_to,status
+PRD-AUTO,Auto Loan,200000.00,2500000.00,12,84,9.50,50.00,630,12000.00,2026-01-01,,ACTIVE
+PRD-EDUCATION,Education Loan,100000.00,3000000.00,12,120,9.00,55.00,620,10000.00,2026-01-01,,ACTIVE
+PRD-HOMEIMP,Home Improvement Loan,100000.00,2000000.00,12,84,10.75,50.00,640,12000.00,2026-01-01,,ACTIVE
+PRD-PERSONAL,Personal Loan,50000.00,1500000.00,12,60,13.50,45.00,650,10000.00,2026-01-01,,ACTIVE

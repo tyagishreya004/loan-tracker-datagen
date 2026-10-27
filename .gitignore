@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# large, fully regenerable exports of the full profile (checksums are in data/full/manifest.json)
+data/full/json/
+data/full/sql/

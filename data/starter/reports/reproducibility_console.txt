@@ -1,0 +1,39 @@
+file                                           identical across runs  sha256[:12]
+csv/affordability_check.csv                                     True  5620cf987483
+csv/applicant.csv                                               True  a0be0c9bb3f9
+csv/applicant_facility.csv                                      True  ff191d4a08b4
+csv/application_event.csv                                       True  8c00650ab87f
+csv/credit_facility.csv                                         True  ddb156e2ff77
+csv/decision.csv                                                True  fe739adbbebe
+csv/disbursement.csv                                            True  d03e8a019439
+csv/document.csv                                                True  c0ef815aa6b8
+csv/employment.csv                                              True  398aefb7e8d0
+csv/income_record.csv                                           True  06b3e155cbe6
+csv/loan_application.csv                                        True  66e988ea2e77
+csv/loan_product.csv                                            True  44e90bc78d0a
+csv/product_document_requirement.csv                            True  4480d21df28f
+csv/repayment_schedule.csv                                      True  c71dc833a06f
+ground_truth/ground_truth.csv                                   True  8f1d70752be0
+ground_truth/ground_truth.json                                  True  59e5425e3791
+json/affordability_check.json                                   True  e6ecbc88c32a
+json/applicant.json                                             True  ba91c6c80f9f
+json/applicant_facility.json                                    True  c1c4ca8b21ea
+json/application_event.json                                     True  fb3324d49bc8
+json/credit_facility.json                                       True  266b31410d6a
+json/decision.json                                              True  6be3db821a17
+json/disbursement.json                                          True  10d92fa845e9
+json/document.json                                              True  e9dfd230e95b
+json/employment.json                                            True  d47177687b2a
+json/income_record.json                                         True  11f04a919173
+json/loan_application.json                                      True  29aa70b526a0
+json/loan_product.json                                          True  8172289f0f81
+json/product_document_requirement.json                          True  8cbce656300d
+json/repayment_schedule.json                                    True  b04ab6c358fc
+schema/DATA_DICTIONARY.md                                       True  3fa5eb14d332
+schema/schema.sql                                               True  18bda6a45554
+sql/seed.sql                                                    True  447e31a4304c
+
+row counts identical : True
+different seed changes output (sanity): True
+compared runs: run1, run2, committed
+REPRODUCIBLE

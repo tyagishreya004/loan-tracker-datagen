@@ -1,0 +1,16 @@
+# Evaluation metrics
+
+## Anomaly detection (validator vs ground truth)
+
+| Issue type | Labelled | Detected | TP | FP | FN | Precision | Recall |
+|---|---|---|---|---|---|---|---|
+| TERM_OUTSIDE_PRODUCT_RANGE | 40 | 40 | 40 | 0 | 0 | 1.0 | 1.0 |
+| SCHEDULE_TOTALS_NOT_RECONCILED | 40 | 40 | 40 | 0 | 0 | 1.0 | 1.0 |
+| DECISION_BEFORE_REQUIRED_CHECKS | 40 | 40 | 40 | 0 | 0 | 1.0 | 1.0 |
+| INCOME_CONFLICT_ACROSS_SOURCES | 40 | 40 | 40 | 0 | 0 | 1.0 | 1.0 |
+| DUPLICATE_APPLICATION_DISBURSED_TWICE | 40 | 40 | 40 | 0 | 0 | 1.0 | 1.0 |
+
+Unexplained findings (not tied to a labelled anomaly): **0**
+
+
+EVALUATION: PASS (perfect detection, zero unexplained findings, baseline decisions match rules)

@@ -1,0 +1,204 @@
+{
+  "anomaly_detection": {
+    "TERM_OUTSIDE_PRODUCT_RANGE": {
+      "labelled": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SCHEDULE_TOTALS_NOT_RECONCILED": {
+      "labelled": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "DECISION_BEFORE_REQUIRED_CHECKS": {
+      "labelled": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "INCOME_CONFLICT_ACROSS_SOURCES": {
+      "labelled": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "DUPLICATE_APPLICATION_DISBURSED_TWICE": {
+      "labelled": 3,
+      "detected": 3,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  },
+  "unexplained_findings": {
+    "count": 0,
+    "samples": []
+  },
+  "label_consistency": {
+    "anomalies_with_unlabelled_generic_findings": 0,
+    "every_finding_maps_to_label": true
+  },
+  "decision_agreement": {
+    "baseline_agreement": 1.0,
+    "baseline_n": 285,
+    "anomalies_where_actual_differs_from_expected": 9,
+    "anomaly_n": 15,
+    "note": "anomalies of type schedule/decision-timestamp keep the correct decision; term/income/duplicate anomalies must differ"
+  },
+  "application_status": {
+    "DISBURSED": 175,
+    "REJECTED": 80,
+    "MANUAL_REVIEW": 31,
+    "CANCELLED": 14
+  },
+  "first_decision_by_product": {
+    "PRD-AUTO": {
+      "MANUAL_REVIEW": 16,
+      "REJECTED": 21,
+      "APPROVED": 38,
+      "approval_rate": 0.507
+    },
+    "PRD-EDUCATION": {
+      "APPROVED": 25,
+      "MANUAL_REVIEW": 11,
+      "REJECTED": 5,
+      "approval_rate": 0.61
+    },
+    "PRD-HOMEIMP": {
+      "MANUAL_REVIEW": 18,
+      "APPROVED": 36,
+      "REJECTED": 17,
+      "approval_rate": 0.507
+    },
+    "PRD-PERSONAL": {
+      "MANUAL_REVIEW": 31,
+      "REJECTED": 19,
+      "APPROVED": 63,
+      "approval_rate": 0.558
+    }
+  },
+  "first_decision_reason_codes": {
+    "ALL_CHECKS_PASSED": 162,
+    "HIGH_DTI": 44,
+    "INCOME_PROOF_MISSING": 33,
+    "DOCS_INCOMPLETE": 30,
+    "UNSTABLE_EMPLOYMENT": 23,
+    "BORDERLINE_DTI": 10,
+    "LOW_DISPOSABLE_INCOME": 7,
+    "NO_VERIFIABLE_INCOME": 6,
+    "DUPLICATE_APPLICATION": 4,
+    "LOW_CREDIT_SCORE": 1
+  },
+  "manual_review": {
+    "cases": 76,
+    "resolved_by_analyst": 45,
+    "open_queue": 31
+  },
+  "scenario_tag_coverage": {
+    "BORDERLINE_DTI": 15,
+    "BORDERLINE_SCORE": 5,
+    "CLEAN": 181,
+    "DUPLICATE_APPLICATION": 7,
+    "HIGH_DEBT_BURDEN": 59,
+    "INCOME_CONFLICT": 3,
+    "MISSING_INCOME_PROOF": 24,
+    "UNSTABLE_EMPLOYMENT": 30
+  },
+  "issue_type_coverage": {
+    "INCOME_CONFLICT_ACROSS_SOURCES": 3,
+    "DUPLICATE_APPLICATION_DISBURSED_TWICE": 3,
+    "SCHEDULE_TOTALS_NOT_RECONCILED": 3,
+    "TERM_OUTSIDE_PRODUCT_RANGE": 3,
+    "DECISION_BEFORE_REQUIRED_CHECKS": 3
+  },
+  "distributions": {
+    "dti_after_pct": {
+      "p10": 10.11,
+      "p50": 28.07,
+      "p90": 62.77
+    },
+    "credit_score": {
+      "p10": 680,
+      "p50": 762,
+      "p90": 787
+    },
+    "monthly_income_used": {
+      "p10": 22257.92,
+      "p50": 43872.71,
+      "p90": 89138.61
+    },
+    "requested_principal": {
+      "p10": 100000.0,
+      "p50": 230000.0,
+      "p90": 830000.0
+    },
+    "employment_type": {
+      "SELF_EMPLOYED": 61,
+      "CONTRACT": 44,
+      "SALARIED": 185,
+      "UNEMPLOYED": 10
+    },
+    "credit_score_histogram": {
+      "550": 1,
+      "600": 5,
+      "650": 70,
+      "700": 61,
+      "750": 163
+    }
+  },
+  "fairness_audit": {
+    "by_gender": {
+      "F": {
+        "n": 136,
+        "approval_rate": 0.537
+      },
+      "M": {
+        "n": 155,
+        "approval_rate": 0.542
+      },
+      "X": {
+        "n": 9,
+        "approval_rate": 0.556
+      }
+    },
+    "by_age_band": {
+      "30-44": {
+        "n": 180,
+        "approval_rate": 0.533
+      },
+      "45+": {
+        "n": 53,
+        "approval_rate": 0.509
+      },
+      "<30": {
+        "n": 67,
+        "approval_rate": 0.582
+      }
+    },
+    "max_gap_gender_pp": 0.5,
+    "max_gap_age_pp": 7.3,
+    "note": "Synthetic protected attributes are drawn independently of everything else; gaps should be sampling noise only."
+  },
+  "income_sources": {
+    "DECLARED": 500,
+    "PAYSLIP": 314,
+    "BANK_STATEMENT": 378,
+    "TAX_RETURN": 137
+  }
+}

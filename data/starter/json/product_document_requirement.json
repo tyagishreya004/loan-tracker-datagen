@@ -1,0 +1,17 @@
+[
+{"product_id": "PRD-AUTO", "document_type": "ADDRESS_PROOF", "is_mandatory": true},
+{"product_id": "PRD-AUTO", "document_type": "ID_PROOF", "is_mandatory": true},
+{"product_id": "PRD-AUTO", "document_type": "INCOME_PROOF", "is_mandatory": true},
+{"product_id": "PRD-AUTO", "document_type": "VEHICLE_QUOTE", "is_mandatory": true},
+{"product_id": "PRD-EDUCATION", "document_type": "ADDRESS_PROOF", "is_mandatory": true},
+{"product_id": "PRD-EDUCATION", "document_type": "ADMISSION_LETTER", "is_mandatory": true},
+{"product_id": "PRD-EDUCATION", "document_type": "ID_PROOF", "is_mandatory": true},
+{"product_id": "PRD-EDUCATION", "document_type": "INCOME_PROOF", "is_mandatory": true},
+{"product_id": "PRD-HOMEIMP", "document_type": "ADDRESS_PROOF", "is_mandatory": true},
+{"product_id": "PRD-HOMEIMP", "document_type": "CONTRACTOR_QUOTE", "is_mandatory": true},
+{"product_id": "PRD-HOMEIMP", "document_type": "ID_PROOF", "is_mandatory": true},
+{"product_id": "PRD-HOMEIMP", "document_type": "INCOME_PROOF", "is_mandatory": true},
+{"product_id": "PRD-PERSONAL", "document_type": "ADDRESS_PROOF", "is_mandatory": true},
+{"product_id": "PRD-PERSONAL", "document_type": "ID_PROOF", "is_mandatory": true},
+{"product_id": "PRD-PERSONAL", "document_type": "INCOME_PROOF", "is_mandatory": true}
+]

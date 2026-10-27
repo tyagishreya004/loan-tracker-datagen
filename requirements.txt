@@ -1,0 +1,1 @@
+stdlib only - Python 3.9+ (tested on 3.12). No pip install needed.

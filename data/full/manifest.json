@@ -1,0 +1,171 @@
+{
+  "command": "python generate.py --profile full --seed 20261022 --out data/full",
+  "files": {
+    "csv/affordability_check.csv": {
+      "bytes": 1159741,
+      "sha256": "7104eed8ce386ddcd7284752ecee1bfde2731c51ee46ff5fe2cbb3b38ccc7df4"
+    },
+    "csv/applicant.csv": {
+      "bytes": 584798,
+      "sha256": "2062c3940da83071b0ac5f146124a11997eb73ca4de5a439f790cd25db2b5a76"
+    },
+    "csv/applicant_facility.csv": {
+      "bytes": 666944,
+      "sha256": "05b816184eadefad41ddb28ab89de8820266226146cd67cf4ac84e642f6989a1"
+    },
+    "csv/application_event.csv": {
+      "bytes": 2667729,
+      "sha256": "4f4b339d3f6681c06e8e59e1f7f8fe29d83997d2a9aad5928842a08fe58d4f76"
+    },
+    "csv/credit_facility.csv": {
+      "bytes": 1586249,
+      "sha256": "8724a3f5f09fa579a2546af781748326bb4e50e401a7a3c2ee789c7cdd607045"
+    },
+    "csv/decision.csv": {
+      "bytes": 4798621,
+      "sha256": "e089c53bec532896a47b9c05a7526873532078c5e014252e32549a5ec9d6195c"
+    },
+    "csv/disbursement.csv": {
+      "bytes": 400011,
+      "sha256": "4431e8e6c02867dc38bcff95fa69c651d3fd95f7a05daf301f698a6b7da734a2"
+    },
+    "csv/document.csv": {
+      "bytes": 2265820,
+      "sha256": "6e119cb23e341ffe4bd9a9743ed8a9606627a9361d27f8028dad4225ff45e852"
+    },
+    "csv/employment.csv": {
+      "bytes": 1225414,
+      "sha256": "2922b0254675fc0f0acfac38862d8e22e3f3f0d0b1f9df328ef51c77289b974c"
+    },
+    "csv/income_record.csv": {
+      "bytes": 1946308,
+      "sha256": "06a15ce4df608aa551192a911be0c438ad87c8d409e693bd32669cabb8215830"
+    },
+    "csv/loan_application.csv": {
+      "bytes": 787069,
+      "sha256": "f830040c86b72b14bfa6bed259409f0dd20aea487682a8cf6910a12e7f244139"
+    },
+    "csv/loan_product.csv": {
+      "bytes": 577,
+      "sha256": "44e90bc78d0a09a4c85ccbc2fc0dcd9afd950b437b11a499976618139da02eea"
+    },
+    "csv/product_document_requirement.csv": {
+      "bytes": 484,
+      "sha256": "4480d21df28f5c2f1dc4c0ba1596672c4ee00d9f0e7e53c87395038a73895cde"
+    },
+    "csv/repayment_schedule.csv": {
+      "bytes": 21372267,
+      "sha256": "190dab845416d0b9d960f95c87462082082ed844beb1cfc74695a45e0705a854"
+    },
+    "ground_truth/ground_truth.csv": {
+      "bytes": 537135,
+      "sha256": "6db509c7c673b58352ef4451e7216d347d73f86e4c34c179e3b381e35deae045"
+    },
+    "ground_truth/ground_truth.json": {
+      "bytes": 1820824,
+      "sha256": "2efc6fc89b3e6248fabd0e327371470faf299cf442647e7222d1ba9f0386089e"
+    },
+    "json/affordability_check.json": {
+      "bytes": 4169397,
+      "sha256": "a69ebf6ee3487a46551d4f1eae048ce25b6be72731b66ca64d58350349928ae8"
+    },
+    "json/applicant.json": {
+      "bytes": 1884715,
+      "sha256": "f44725632dfd46c6f84511fd0c314c2141f8d0e8967414996e9b805412755c13"
+    },
+    "json/applicant_facility.json": {
+      "bytes": 1927707,
+      "sha256": "8bf6ce980202ff81a57fecbf7432fba5baef953254bd5a7de279a7afd911b686"
+    },
+    "json/application_event.json": {
+      "bytes": 5929617,
+      "sha256": "bc35498b8edce359f5ed2a3ddc718c667d678f64494c0ffdd7d01ac45f4d2e04"
+    },
+    "json/credit_facility.json": {
+      "bytes": 5214495,
+      "sha256": "28e915db2e3f33f3db642c26b88fa8e1c62bdeef2279b05ae30e1444bf5f4f12"
+    },
+    "json/decision.json": {
+      "bytes": 6039101,
+      "sha256": "86142c467708d733c87b6b983da0106a6a9c875cc2aa0edd91a99916f116e0e1"
+    },
+    "json/disbursement.json": {
+      "bytes": 847944,
+      "sha256": "bda8c0b73d184599256da50975b8628e82b09a09df548e4fccbd678c9e9a51c8"
+    },
+    "json/document.json": {
+      "bytes": 5338769,
+      "sha256": "506283d148b47f1e0014b10e3c92b4e8e23b92e3eecf9c5c9a0d3242db185474"
+    },
+    "json/employment.json": {
+      "bytes": 3309811,
+      "sha256": "eb0f2ce300c2e717ce9883ab45c34b112a375b23753a13043b27bf67409f8b07"
+    },
+    "json/income_record.json": {
+      "bytes": 5527848,
+      "sha256": "68f3e991a1632c6f7a922c3242f7ebbee421187cdafab623b3ecd4b4b2432cfe"
+    },
+    "json/loan_application.json": {
+      "bytes": 2027635,
+      "sha256": "08b14bdc1cf76f531cd6cb11912bcd337ddb064abbf2a466fa352e8ba3983719"
+    },
+    "json/loan_product.json": {
+      "bytes": 1383,
+      "sha256": "8172289f0f817747420d5e742435b911d2f61431a76891f5c5539da23139d166"
+    },
+    "json/product_document_requirement.json": {
+      "bytes": 1289,
+      "sha256": "8cbce656300da20bcccabbae401fa67857437c71cf1aa7f6f3d6590b033029f3"
+    },
+    "json/repayment_schedule.json": {
+      "bytes": 54066945,
+      "sha256": "da6e57de7cb7283313683ff36330e091cb69080f17dffc21d3830dd66e5ac357"
+    },
+    "schema/DATA_DICTIONARY.md": {
+      "bytes": 18913,
+      "sha256": "3fa5eb14d3324cb993f5c008cb449159153444ade01cde26243e83d4edc49695"
+    },
+    "schema/schema.sql": {
+      "bytes": 9076,
+      "sha256": "18bda6a45554b2244b9b885b438c1b31d518104ad63c1eb1efb2abd36233c6d0"
+    },
+    "sql/seed.sql": {
+      "bytes": 47018974,
+      "sha256": "46627f8a051accdee6e7f59c908c25b2f954b4c5a8a4196e66707c2da3dbbbd4"
+    }
+  },
+  "generator": "loan-tracker-datagen",
+  "generator_version": "1.0.0",
+  "parameters": {
+    "anomalies_per_type": 40,
+    "applicants": 10000,
+    "applications": 6000
+  },
+  "python": "3.14",
+  "row_counts": {
+    "AffordabilityCheck": 6993,
+    "Applicant": 10000,
+    "ApplicantFacility": 19700,
+    "ApplicationEvent": 22640,
+    "CreditFacility": 18976,
+    "Decision": 6993,
+    "Disbursement": 3420,
+    "Document": 22105,
+    "Employment": 15890,
+    "IncomeRecord": 26544,
+    "LoanApplication": 6000,
+    "LoanProduct": 4,
+    "ProductDocumentRequirement": 15,
+    "RepaymentSchedule": 171666
+  },
+  "rule_version": "LT-RULES-1.0",
+  "seed": 20261022,
+  "snapshot": "2026-10-22T00:00:00",
+  "sources": {
+    "external_data_used": false,
+    "fields_discarded": [],
+    "note": "All data is synthetic and generated from the seed. No external dataset, URL, license or personal data is involved; no public reference data was ingested.",
+    "transformations": []
+  },
+  "warnings": []
+}
